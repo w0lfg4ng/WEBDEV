@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Javascript</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>
+      Projeto Javasvavas escripete
+    </h1>
+  
+  <h3 id="naruto">
+    O Naruto é chato
+  </h3>
+  <button type="button" onclick="console.log('quer me clicar, bacurau');">
+    click meeeeeeee
+  </button>
+  <button type="button" onclick="window.alert('tens certeza disso, bacurau?');">
+    Me aperte 
+  </button>
+  <button type= "button" onclick="document.write('site deletado, bacurau');">
+    confia, clica em mim
+  </button>
+    <button type="button" onclick= "document.getElementById('naruto').innerHTML = ('The Naruto is annoying');">
+    confia no pai
+    </button>
+    <hr>
+    <label>Par ou Impar?</label>
+    <input type= "text" id="input1">
+    <button type="button" onclick="parOuImpar()">
+      Enviar
+    </button>
+    <input id="spamqtd">
+    <button type="button" onclick="spamDeBotao()">
+      Spammar
+    </button>
+    <script>
+      
+      function spamDeBotao(){
+        var spamqtd = document.getElementById("spamqtd").value;
+        
+        var output = "";
+        for(var i = 0; i <spamqtd; i++){
+          output += "<button type= 'button'> SPAM </button>"
+        }
+        document.getElementById("lugarSpammado").innerHTML = output;
+      }
+      
+      
+      function parOuImpar(){
+        console.log("A função foi chamada")
+        
+        var n = document.getElementById("input1").value;
+        
+        if(num%2 == 0){
+          window.alert("É par");
+        }
+        
+        else{
+          window.alert("É impar")
+        }
+      }
+    </script>
+  </body>
+</html>
